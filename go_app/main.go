@@ -28,13 +28,16 @@ func main() {
 	if input == "Positive" || input == "positive" {
 		fmt.Println("Your number is: ", randomNumber)
 		fmt.Println()
-		fmt.Println("Done.")
+		fmt.Println("\nDone.")
 	} else if input == "Negative" || input == "negative" {
 		randomNumberFormatted := 0 - randomNumber
 		fmt.Println("Your number is:", randomNumberFormatted)
 		fmt.Println()
-		fmt.Println("Done.")
+		fmt.Println("\nDone.")
 	} else {
+		fmt.Println()
 		fmt.Println("Please enter a valid input")
+		fmt.Println()
+		fmt.Println("\nDone.")
 	}
 }
