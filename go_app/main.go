@@ -22,22 +22,19 @@ func main() {
 	fmt.Scanln(&input)
 
 	// process
-	if input == "Positive" || input == "positive" {
 		s1 := rand.NewSource(time.Now().UnixNano())
 		r1 := rand.New(s1)
 		randomNumber := r1.Intn(6) + 1
+	if input == "Positive" || input == "positive" {
 		fmt.Println("Your number is: ", randomNumber)
 		fmt.Println()
 		fmt.Println("Done.")
 	} else if input == "Negative" || input == "negative" {
-		s1 := rand.NewSource(time.Now().UnixNano())
-		r1 := rand.New(s1)
-		randomNumber := r1.Intn((6)+1) * -1
-		fmt.Println("Your number is:", randomNumber)
+		randomNumberFormatted := 0 - randomNumber
+		fmt.Println("Your number is:", randomNumberFormatted)
 		fmt.Println()
 		fmt.Println("Done.")
 	} else {
 		fmt.Println("Please enter a valid input")
 	}
 }
-// not done
