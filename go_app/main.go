@@ -22,9 +22,9 @@ func main() {
 	fmt.Scanln(&input)
 
 	// process
-		s1 := rand.NewSource(time.Now().UnixNano())
-		r1 := rand.New(s1)
-		randomNumber := r1.Intn(6) + 1
+	s1 := rand.NewSource(time.Now().UnixNano())
+	r1 := rand.New(s1)
+	randomNumber := r1.Intn(6) + 1
 	if input == "Positive" || input == "positive" {
 		fmt.Println("Your number is: ", randomNumber)
 		fmt.Println()
